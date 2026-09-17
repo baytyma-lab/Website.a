@@ -176,36 +176,8 @@
   U.init({ overlay: true, current: '' });
   U.parallax(document.querySelector('[data-parallax]'), 0.18);
 
-  /* Оживлённый первый экран: трава и волосы на ветру.
-     Только на больших экранах, без режима экономии трафика и при разрешённой анимации.
-     Фото остаётся постером и видно, пока видео не готово, — пустого экрана не будет. */
-  (function heroVideo() {
-    var media = document.querySelector('[data-parallax]');
-    if (!media) return;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var small = window.matchMedia('(max-width: 860px)').matches;
-    var conn = navigator.connection || {};
-    if (reduce || small || conn.saveData) return;
-
-    var v = document.createElement('video');
-    v.className = 'hero__video';
-    v.src = 'video/hero.mp4';
-    v.poster = 'img/hero.jpg';
-    v.muted = true;
-    v.loop = true;
-    v.playsInline = true;
-    v.setAttribute('muted', '');
-    v.setAttribute('playsinline', '');
-    v.setAttribute('aria-hidden', 'true');
-    v.preload = 'auto';
-    v.addEventListener('canplay', function () {
-      var p = v.play();
-      if (p && p.catch) p.catch(function () { /* автозапуск запрещён — остаётся фото */ });
-      v.classList.add('is-on');
-    });
-    v.addEventListener('error', function () { v.remove(); });
-    media.appendChild(v);
-  })();
+  /* Первый экран — статичное фото. Видео пробовали 17.09, пользователю не подошло;
+     ролик лежит в source-img/video/hero.mp4, если решим вернуть. */
 
   /* Счётчики в блоке «О бренде» */
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

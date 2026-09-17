@@ -319,14 +319,6 @@ input, select, textarea { font: inherit; color: inherit; }
 /* Без запаса сверху: голова модели у самого края кадра, параллакс сдвигает фото только вниз */
 .hero__media { position: absolute; inset: 0 -22% -8% 0; z-index: 0; will-change: transform; }
 .hero__media .ph { position: absolute; inset: 0; height: 100%; aspect-ratio: auto; }
-/* Оживлённый кадр поверх фото: появляется, только когда видео реально готово играть */
-.hero__video {
-  position: absolute; inset: 0; z-index: 1;
-  width: 100%; height: 100%; object-fit: cover; object-position: 50% top;
-  opacity: 0; transition: opacity 900ms var(--ease);
-  pointer-events: none;
-}
-.hero__video.is-on { opacity: 1; }
 /* Модель в центре кадра. Слой фото шире экрана на 22% вправо (пустая степь уходит за край),
    поэтому модель встаёт на ~61% ширины — правее логотипа и заголовка */
 .hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% top; }
