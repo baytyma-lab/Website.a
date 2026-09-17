@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ТҰМАР</title>
+<meta name="description" content="ТҰМАР — современная казахская одежда с ручной вышивкой ою-өрнек. Шапаны, камзолы, көйлек и тақия. Пошив в Казахстане.">
+<meta name="theme-color" content="#1A1410">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Onest:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div data-slot="header"></div>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero t-night grain" aria-labelledby="hero-title">
+    <div class="hero__media" data-parallax>
+      <div class="ph" data-label="" style="--tint:#2E241C">
+        <img src="img/hero.jpg" alt="Девушка в закрытом светлом платье и бордовом бархатном шапане с лисьим мехом идёт по степи на закате" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="wrap hero__content">
+      <div class="hero__grid">
+        <div>
+          <span class="eyebrow reveal">Жаңа коллекция · Күз 2026</span>
+          <h1 class="h1 hero__title reveal" id="hero-title" style="--d:120ms">Оберег, <em>который носят</em></h1>
+          <p class="lead reveal" style="--d:240ms">Шапаны, камзолы и көйлек с ручной вышивкой ою-өрнек. Каждый узор здесь — не декор, а слово, которое степь говорила веками.</p>
+          <div class="hero__actions reveal" style="--d:360ms">
+            <a class="btn btn--primary" href="catalog.html">Смотреть каталог <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5"/></svg></a>
+            <a class="btn btn--ghost" href="#story">Наша история</a>
+          </div>
+        </div>
+        <div class="hero__aside reveal" style="--d:480ms">
+          <span class="italic">Қорғайтын киім</span>
+          <p>Тумар — треугольный амулет, который носили у сердца. Мы шьём одежду с тем же намерением.</p>
+          <span class="hero__scroll">Листайте</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Строка доверия -->
+  <section class="t-night" aria-label="Почему ТҰМАР">
+    <div class="wrap trust">
+      <ul class="trust__list" data-trust></ul>
+    </div>
+  </section>
+
+  <!-- Коллекции -->
+  <section class="section t-felt" id="collections" aria-labelledby="col-title">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow reveal">Коллекциялар</span>
+          <h2 class="h2 reveal" id="col-title" style="--d:100ms">Четыре линии<br>одного гардероба</h2>
+        </div>
+        <a class="link-arrow reveal" href="catalog.html">Весь каталог <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5"/></svg></a>
+      </div>
+      <div class="collections" data-collections></div>
+    </div>
+  </section>
+
+  <div class="t-felt" data-big-marquee></div>
+
+  <!-- Ою-өрнек -->
+  <section class="section t-night grain" id="oyu" aria-labelledby="oyu-title">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow reveal">Ою-өрнек</span>
+          <h2 class="h2 reveal" id="oyu-title" style="--d:100ms">Каждый узор —<br>это слово</h2>
+        </div>
+        <p class="lead reveal" style="--d:200ms">Казахский орнамент не рисовали для красоты. Им записывали пожелания: достатка, дороги, долгой жизни, защиты. Вот четыре узора, которые мы вышиваем чаще всего.</p>
+      </div>
+      <div class="oyu" data-oyu></div>
+    </div>
+  </section>
+
+  <!-- Хиты -->
+  <section class="section t-felt" aria-labelledby="best-title">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow reveal">Хиты сезона</span>
+          <h2 class="h2 reveal" id="best-title" style="--d:100ms">То, что выбирают первым</h2>
+        </div>
+        <a class="link-arrow reveal" href="catalog.html?sort=popular">Все хиты <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5"/></svg></a>
+      </div>
+      <div class="grid-products" data-bestsellers></div>
+    </div>
+  </section>
+
+  <!-- Lookbook -->
+  <section class="section t-night grain" aria-labelledby="look-title">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow reveal">Lookbook</span>
+          <h2 class="h2 reveal" id="look-title" style="--d:100ms">Образы сезона</h2>
+        </div>
+        <p class="lead reveal" style="--d:200ms">Бархат, мех лисы и серебро. Четыре вещи, в которых зимний казахский образ собирается целиком.</p>
+      </div>
+      <div class="lookbook" data-lookbook></div>
+    </div>
+  </section>
+
+  <!-- История -->
+  <section class="section t-felt" id="story" aria-labelledby="story-title">
+    <div class="wrap story">
+      <div class="story__media reveal">
+        <div class="ph" data-label="Шапан «Жауһар»" style="--tint:#1F4D3E">
+          <img src="img/shapan-zhauhar-1.jpg" alt="Изумрудный бархатный шапан «Жауһар» с золотой вышивкой қошқар мүйіз по борту" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow reveal">О бренде</span>
+        <h2 class="sr-only" id="story-title">История ТҰМАР</h2>
+        <p class="story__quote reveal" style="--d:100ms">«Бабушка вышивала мне тумар, чтобы дорога была лёгкой. Теперь мы вышиваем их на одежде»</p>
+        <div class="story__text reveal" style="--d:200ms">
+          <p>ТҰМАР начался в маленькой мастерской в Шымкенте. Мы хотели носить национальную одежду не только на той и Наурыз, а каждый день — на работу, в город, в дорогу.</p>
+          <p>Поэтому крой у нас современный, ткани — удобные, а вышивка остаётся честной и ручной. Орнамент на каждой вещи выбирают под её смысл, а не под моду.</p>
+        </div>
+        <div class="stats reveal" style="--d:300ms">
+          <div><div class="stat__num" data-count="12">12</div><div class="stat__label">мастериц в мастерской</div></div>
+          <div><div class="stat__num" data-count="14">14</div><div class="stat__label">часов на вышивку шапана</div></div>
+          <div><div class="stat__num" data-count="2">2</div><div class="stat__label">бутика: Шымкент и Алматы</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="section t-night grain" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="section__head" style="justify-content:center;text-align:center">
+        <div><span class="eyebrow reveal">Пікірлер</span><h2 class="sr-only" id="rev-title">Отзывы покупателей</h2></div>
+      </div>
+      <div class="reviews reveal" data-reviews></div>
+    </div>
+  </section>
+
+  <!-- Подписка -->
+  <section class="section--tight t-felt" aria-labelledby="sub-title">
+    <div class="wrap subscribe">
+      <div>
+        <span class="eyebrow reveal">Жаңалықтар</span>
+        <h2 class="h2 reveal" id="sub-title" style="--d:100ms;margin-top:14px">Первыми — к новой коллекции</h2>
+      </div>
+      <form class="reveal" data-subscribe novalidate style="--d:200ms">
+        <div class="field">
+          <label for="sub-email">Электронная почта</label>
+          <div class="subscribe__form">
+            <input class="input" type="email" id="sub-email" name="email" autocomplete="email" inputmode="email" placeholder="aigerim@mail.kz" aria-describedby="sub-hint" required>
+            <button class="btn btn--primary" type="submit">Подписаться</button>
+          </div>
+          <span class="field__hint" id="sub-hint" aria-live="polite">Раз в месяц. Без спама, только новые вещи и истории узоров.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<div data-slot="footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

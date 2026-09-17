@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог — ТҰМАР</title>
+<meta name="description" content="Каталог ТҰМАР: шапаны, камзолы, көйлек и аксессуары с ручной вышивкой ою-өрнек.">
+<meta name="theme-color" content="#1A1410">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Onest:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="t-felt">
+
+<div data-slot="header"></div>
+
+<main id="main" class="t-felt">
+  <div class="wrap">
+    <header class="page-head">
+      <nav aria-label="Хлебные крошки">
+        <ol class="crumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li aria-current="page" data-crumb>Каталог</li>
+        </ol>
+      </nav>
+      <h1 class="h1" data-title>Каталог</h1>
+      <p class="lead" data-subtitle>Современная казахская одежда с ручной вышивкой. Каждую вещь можно отфильтровать по размеру, цвету и смыслу узора.</p>
+    </header>
+
+    <div class="catalog">
+      <aside class="filters t-felt" id="filters" aria-label="Фильтры" role="dialog" aria-modal="false">
+        <div class="filters__head">
+          <h2 class="h3">Фильтры</h2>
+          <button type="button" class="icon-btn" aria-label="Закрыть фильтры" data-close data-autofocus>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="filters__scroll" data-filters></div>
+        <div class="filters__foot">
+          <button type="button" class="btn btn--ghost" data-reset>Сбросить</button>
+          <button type="button" class="btn btn--primary" data-close data-apply>Показать</button>
+        </div>
+      </aside>
+
+      <section aria-labelledby="results-title">
+        <h2 class="sr-only" id="results-title">Товары</h2>
+        <div class="toolbar">
+          <p class="toolbar__count" aria-live="polite" data-count></p>
+          <div class="toolbar__right">
+            <div class="field" style="gap:0">
+              <label class="sr-only" for="q">Поиск по каталогу</label>
+              <input class="input" id="q" type="search" placeholder="Поиск: шапан, бархат, бөрік…" autocomplete="off" style="min-height:44px" data-q>
+            </div>
+            <button type="button" class="btn btn--ghost filters-open" aria-controls="filters" aria-expanded="false" data-open-filters style="min-height:44px;padding:0 18px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+              Фильтры <span class="num" data-active-count></span>
+            </button>
+            <div class="select">
+              <label class="sr-only" for="sort">Сортировка</label>
+              <select id="sort" data-sort>
+                <option value="popular">Популярные</option>
+                <option value="new">Новинки</option>
+                <option value="price-asc">Дешевле</option>
+                <option value="price-desc">Дороже</option>
+                <option value="rating">По рейтингу</option>
+              </select>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="chips" data-chips></div>
+        <div class="grid-products" data-grid></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<div data-slot="footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>
